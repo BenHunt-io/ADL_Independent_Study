@@ -1,7 +1,7 @@
 # Activities of Daily Living - [First Person Activity Recognition Independent Study Texas State University] 
 
 ### Overview
-This repository is a compilation of programs to do training and video processing, particularly on the ADL (Activites of Daily Living) dataset from 2012 to work with the Kinetics Dataset. The ADL dataset consists of 1 million frames of unscripted morning activity in the 1st person point of view. This data is raw and not processed for other datasets. Kinetics-i3D is a state of the art 3rd person activity recongition model from 2017 trained on a much larger dataset. Kinetics-i3D achieves a much higher classification accuracy than what the ADL model reports. The goal is to use a this state of the art model and dataset on ADL to improve the results.
+This repository is a compilation of programs to do network training and video processing, particularly on the ADL (Activites of Daily Living) dataset from 2012 to work with the Kinetics-i3D model. The ADL dataset consists of 1 million frames of unscripted morning activity in the 1st person point of view. This data is raw and not processed for other datasets. Kinetics-i3D is a state of the art 3rd person activity recongition model from 2017 trained on a much larger dataset. Kinetics-i3D achieves a much higher classification accuracy than what the ADL model reports. The goal is to use this state of the art model and dataset on ADL to improve the results. Tranfser learning in Kinectics-I3D was achieved with the use of ImageNet. We ask the question, can parameters and mappings learned from the first person point of view be applied to first person?
 
 ### Relevant Papers & Git Repos
 Kinetics i3D [2017] : https://github.com/deepmind/kinetics-i3d <br />
