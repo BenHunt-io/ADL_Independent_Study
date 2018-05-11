@@ -11,7 +11,7 @@ Other Optical Flow: https://people.csail.mit.edu/celiu/OpticalFlow/ <br />
 
 ADL Indepedent Study PPT: Located within the repo <br />
 
-<p>Related:</p>
+<b>Related:</b>
 Videos: https://arxiv.org/pdf/1406.2199.pdf <br />
 Object Detection: https://arxiv.org/pdf/1712.06317.pdf, https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Kang_Object_Detection_From_CVPR_2016_paper.pdf <br />
 
@@ -42,7 +42,7 @@ For example: 00:30 00:58 14 (mm:ss mm:ss actionLabel, an example annotation from
 <i>Config.py - </i> This file specifies the parameters of the network. Modified to work with ADL. See I3D repo for original setup <br /><br />
 
 
-##### Issues:
+###### Issues:
 - One annotation should not be used in all dataset splits. For example: 00:30 00:58 14 would contain many inputs as the input is only 64 frames right currently. How it is written currently, is that the annotation is processed and then shuffled and split into train/val/test. This causes the data to be too similar in between sets.
 - Training crashes when trying to do validation. Seems to be something to do with the Tensorflow Queue. Ignoring validation right now.
 - Training appears to work correctly (loss is improving), but testing seems to have some sort of a bug, and predictions are being thrown off.
@@ -54,7 +54,7 @@ For example: 00:30 00:58 14 (mm:ss mm:ss actionLabel, an example annotation from
 - Andrew Ng Machine Learning tutorials: https://www.youtube.com/watch?v=PPLop4L2eGk
 
 
-##### Specs:
+###### Specs:
 - Intel Xeon E5-2687W v3 @ 3.10ghz x 20, 128gb 1600mhz Ram, 2TB HDD, Geforce GTX Titan X 12GB
 - Python 3.6
 - PIL, Numpy, Tensorflow, pyflow. Other library dependencies would be from Kinetics-i3D most likely.
