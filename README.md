@@ -14,7 +14,7 @@ Related:
 
 ### Overview Of Scripts
 
-**VideoProcessor.py:**<br />
+**VideoProcessor.py**<br />
 <i>RunVideoProcessor.sh</i><br />
 <i>RunVideoProcessor.py</i><br />
 <i>CheckDirectories.py</i><br />
