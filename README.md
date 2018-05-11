@@ -31,6 +31,7 @@ For training data, video clips gets processed as 'x' number of frames of optical
 <i><b>CheckDirectories.py - </b></i> Checks to see what videos have not been processed yet in the particular set you are working with. Compares a text file with all the possible video paths to the actual paths that have been created with processed data inside. The paths in the actual processed video directory that don't exist are printed. <br /><br />
 <i><b>MakeDirectories.py - </b></i> Processes the action annotations of the ADL dataset.
 For example: 00:30 00:58 14 (mm:ss mm:ss actionLabel, an example annotation from ADL) would create a new path every 64 frames. This path would be just a line in a text file but would later be used to process the actual videol. See the example path above.</p>
+<i><b>shuffle.py - </b></i> Shuffles the generated paths from MakeDirectories.Py. Makes 70/20/10 splits for Training/Test/Validation respectively.
 
 
 
@@ -38,7 +39,7 @@ For example: 00:30 00:58 14 (mm:ss mm:ss actionLabel, an example annotation from
 <i>Train.py - Modified to load in the correct tensorflow model checkpoints and to save new checkpoints.</i><br />
 <i>evaluate_sample.py - </i> Path to input modified<br />
 <i>i3d.py - </i> Paths modified, other small edits should be commented. <br />
-<i>Config.py - </i> This file specifies the parameters of the network. Modified to work with ADL. See I3D repo for original setup <br />
+<i>Config.py - </i> This file specifies the parameters of the network. Modified to work with ADL. See I3D repo for original setup <br /><br />
 
 
 ##### Issues:
@@ -47,6 +48,16 @@ For example: 00:30 00:58 14 (mm:ss mm:ss actionLabel, an example annotation from
 - Training appears to work correctly (loss is improving), but testing seems to have some sort of a bug, and predictions are being thrown off.
 
 
+###### Useful Resources:
+- CS231n: Convolutional Neural Networks for Visual Recognition: http://cs231n.stanford.edu/
+- Tensorflow CNN tutorial: https://www.tensorflow.org/tutorials/layers
+- Andrew Ng Machine Learning tutorials: https://www.youtube.com/watch?v=PPLop4L2eGk
+
+
+##### Specs:
+- Intel Xeon E5-2687W v3 @ 3.10ghz x 20, 128gb 1600mhz Ram, 2TB HDD, Geforce GTX Titan X 12GB
+- Python 3.6
+- PIL, Numpy, Tensorflow, pyflow. Other library dependencies would be from Kinetics-i3D most likely.
 
 <i>For support, questions, or error reports please contact</i><br />
 <i>Ben Hunt: wbh26@txstate.edu</i>
