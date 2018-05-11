@@ -18,7 +18,7 @@ Object Detection: https://arxiv.org/pdf/1712.06317.pdf, https://www.cv-foundatio
 
 ### Overview Of Scripts
 
-<b>VideoProcessor.py - </b> Main processing script for the ADL Dataset. Processes video clips for optical flow and RGB input. Instantiate an instance of this class and use the process_clip() method. The method takes as input a Path of type String that represents what directory the processed clip will be stored in as well as a boolean flag denoting whether the video is being processed for training or testing.  < /br>
+<b>VideoProcessor.py - </b> Main processing script for the ADL Dataset. Processes video clips for optical flow and RGB input. Instantiate an instance of this class and use the process_clip() method. The method takes as input a Path of type String that represents what directory the processed clip will be stored in as well as a boolean flag denoting whether the video is being processed for training or testing.  <br />
 Example path: inputData/v_doing_laundry_c_9261_time_24899_24963_P_20 <br />
 The path format is important, the format is as follows: v_classLabel_c_clip#_time_startFrame_endFrame_VideoName
 This just processes one clip at a time in one process. You need a combination of a loop and a bash script that runs multiple processes of this script on different segments of the dataset.<br /><br />
