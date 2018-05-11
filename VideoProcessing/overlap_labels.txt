@@ -1,0 +1,14 @@
+actions(21).txt  = 'combing hair';#21
+actions(38).txt  = 'brushing teeth';#38
+actions(383).txt  = 'washing hands/face';#383
+actions(97).txt  = 'laundry';#97
+actions(380).txt = 'washing dishes';#380
+actions(192).txt = 'making tea';#192
+actions(101).txt = 'drinking water/bottle';#101
+actions(101).txt = 'drinking water/tap';#101
+actions(199).txt = 'mopping in kitchen';#199
+actions(374).txt = 'using computer';#374
+actions(187).txt = 'making bed';#187
+actions(265).txt = 'reading book';#265
+actions(397).txt = 'writing';#397
+actions(101).txt = 'drinking coffee/tea';#101
