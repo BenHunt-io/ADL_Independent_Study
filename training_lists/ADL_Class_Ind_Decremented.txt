@@ -1,0 +1,12 @@
+36_brushing hair
+37_brushing teeth
+382_washing hands
+96_doing laundry
+379_washing dishes
+191_making tea
+100_drinking
+198_mopping floor
+373_using computer
+186_making bed
+264_reading book
+396_writing
